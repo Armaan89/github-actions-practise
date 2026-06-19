@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Display OS Information
-        run: 
+        run: |
           echo "Current User:"
           whoami
 
