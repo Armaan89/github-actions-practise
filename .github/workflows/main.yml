@@ -1,0 +1,22 @@
+name: OS Information
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  os-details:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display OS Information
+        run: 
+          echo "Current User:"
+          whoami
+
+          echo "Current Directory:"
+          pwd
+
+          echo "Operating System Details:"
+          uname -a
